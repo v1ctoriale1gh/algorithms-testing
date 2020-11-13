@@ -49,3 +49,11 @@ function includesNumber(array, num) {
         return includesNumber(array.slice(1), num)
     }
 }
+
+function calculateFactorial(n) {
+    if (n > 0) {
+        return n * calculateFactorial(--n)
+    } else {
+        return 1
+    }
+}
