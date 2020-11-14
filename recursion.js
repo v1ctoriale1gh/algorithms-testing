@@ -59,5 +59,11 @@ function calculateFactorial(n) {
 }
 
 function greatestCommonDenominator(x, y) {
-    (x.odd? && y.odd?)
+    var gcd = function(a, b) {
+        if ( ! b) {
+            return a;
+        }
+    
+        return gcd(b, a % b);
+    };
 }
